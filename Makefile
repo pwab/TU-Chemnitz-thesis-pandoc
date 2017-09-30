@@ -2,9 +2,8 @@
 
 test.pdf: test.md
 	pandoc	--template=template/template.tex \
-			--filter pandoc-citeproc \
 			--listings \
-			--chapter \
+			--top-level-division=chapter \
 			test.md \
 			bibliography.md \
 			-o "build/test.pdf"

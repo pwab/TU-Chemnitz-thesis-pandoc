@@ -1,0 +1,1 @@
+pandoc	--template=template/template.tex --listings --top-level-division=chapter test.md bibliography.md -o "build/test.pdf"
